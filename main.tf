@@ -54,7 +54,7 @@ resource "aws_instance" "backend" {
 
     inline = [
 
-      "sudo sleep 30",
+      "sudo sleep 300",
 
       "sudo apt-get update -y",
 
