@@ -58,7 +58,7 @@ resource "aws_instance" "backend" {
 
       "sudo apt-get update -y",
 
-      "sudo apt-get install python sshpass -y"
+      "sudo apt-get install python sshpass -y",
 
       "sudo chmod +x ~/frontend/run_frontend.sh",
 
