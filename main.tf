@@ -40,7 +40,15 @@ resource "aws_instance" "backend" {
 
 
 
-  
+  provisioner "file" {
+
+    source = "./frontend"
+
+    destination  = "~/"
+
+
+
+  }
 
   provisioner "remote-exec" {
 
@@ -51,6 +59,10 @@ resource "aws_instance" "backend" {
       "sudo apt-get update -y",
 
       "sudo apt-get install python sshpass -y"
+
+      "sudo chmod +x ~/frontend/run_frontend.sh",
+
+      "sudo sh ~/frontend/run_frontend.sh"
 
     ]
 
