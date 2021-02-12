@@ -50,7 +50,7 @@ try {
 
     stage('Getting Ready For Ansible Deployment'){
 
-        sh "echo \'<h1>JENKINS TASK BUILD ID: ${env.BUILD_DISPLAY_NAME}</h1>\' > ansible-code/roles/petclinic/files/jenkins.html"
+        sh "echo \'<h1>JENKINS TASK BUILD ID: ${env.BUILD_DISPLAY_NAME}</h1>\' > ansible-code/jboss/files/jenkins.html"
 
     }
 
